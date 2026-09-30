@@ -4,3 +4,7 @@
 	encode zstd gzip
 	reverse_proxy web:3000
 }
+
+www.{$SITE_DOMAIN} {
+	redir https://{$SITE_DOMAIN}{uri} permanent
+}

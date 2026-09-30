@@ -18,7 +18,7 @@ export async function loader({ request }: { request: Request }) {
 }
 
 export function meta() {
-  return pageMeta({ title: "主题", description: "按公司与模型、技术方向、内容形态聚合的 AI 主题页：OpenAI、Anthropic、Agent、多模态、论文与教程等 38 个方向。", path: "/topics", image: "/og/pages/topics.png" });
+  return pageMeta({ title: "主题", description: "按平台与机构、执行环节、内容形态浏览 GEO 与 AI 营销动态。", path: "/topics", image: "/og/pages/topics.png" });
 }
 
 export function headers() {
@@ -26,9 +26,9 @@ export function headers() {
 }
 
 const GROUPS = [
-  { key: "company", name: "公司与模型", blurb: "按厂商与模型系追踪：谁发了什么、又赢了哪一局" },
-  { key: "field", name: "技术方向", blurb: "按技术领域深挖：Agent、多模态、具身智能……" },
-  { key: "genre", name: "内容形态", blurb: "按内容类型浏览：论文、教程、观点、政策……" },
+  { key: "company", name: "平台与机构", blurb: "追踪 AI 问答、搜索与推荐入口的官方变化" },
+  { key: "field", name: "执行环节", blurb: "沿着企业 GEO 的诊断、建设、监测与转化链路阅读" },
+  { key: "genre", name: "内容形态", blurb: "按公告、方法、研究、案例与采购线索浏览" },
 ] as const;
 
 export default function TopicsPage() {
@@ -36,9 +36,9 @@ export default function TopicsPage() {
   return (
     <div className="pb-10">
       <header className="pb-2 pt-5 lg:pt-1">
-        <h1 className="text-[24px] font-semibold leading-[1.3] text-ink">按主题看 AI</h1>
+        <h1 className="text-[24px] font-semibold leading-[1.3] text-ink">按主题看 GEO 与 AI 营销</h1>
         <p className="mt-1.5 text-[13px] leading-relaxed text-ink-3">
-          按公司与模型、技术方向、内容形态浏览 <span className="num">{topics.length}</span> 个主题，持续汇集近期焦点与精选。
+          按平台与机构、执行环节、内容形态浏览 <span className="num">{topics.length}</span> 个主题，持续汇集值得研究的变化。
         </p>
       </header>
       {GROUPS.map((g) => (
