@@ -1,1 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><rect width="512" height="512" rx="116" fill="#13191c"/><path d="M256 92C271 199 313 241 420 256C313 271 271 313 256 420C241 313 199 271 92 256C199 241 241 199 256 92Z" fill="#2ce2e8"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="艾奇 GEO 情报站">
+  <rect width="512" height="512" rx="112" fill="#10242e"/>
+  <path d="M357 161a146 146 0 1 0 30 145H264" fill="none" stroke="#36dfc0" stroke-width="47" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="364" cy="151" r="28" fill="#ffd07d"/>
+</svg>
